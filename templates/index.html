@@ -11,7 +11,7 @@
             <li>
                 {{ task }}
                 <form action="/delete/{{ loop.index0 }}" method="POST" style="display:inline;">
-                    <button type="submit">Excluir</button>
+                    <button class="delete" type="submit"><i class="fas fa-trash icon-large"></i></button>
                 </form>
             </li>
         {% endfor %}
