@@ -16,11 +16,13 @@ def home():
 def add_task():
     # obtemos a tarefa do formulário enviado
     task = request.form.get('task')
-    # verificamos se a tarefa não é vazia e adicionamos
+    # Verificamos se a tarefa não é vazia e adicionamos
     if task:
-        tasks.append(task)  # o método correto é "append" em vez de "oppend"
-        # caso seja vazio, redicionar a tela principal
+        tasks.append(task)  # O método correto é "append" em vez de "oppend"
         return redirect(url_for('home'))
+    else:
+        # Caso a tarefa seja vazia, renderizamos novamente a página principal com uma mensagem de erro
+        return render_template('index.html', tasks=tasks, error='A tarefa não pode estar vazia.')
 
 # Definimos a rota para deletar uma tarefa. Ela aceita o método POST.
 # O '<int:task_id>' na URL captura o índice da tarefa a ser deletada.

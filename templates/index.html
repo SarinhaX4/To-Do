@@ -6,6 +6,9 @@
         <input type="text" name="task" placeholder="Nova tarefa">
         <button type="submit">Adicionar</button>
     </form>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
     <ul>
         {% for task in tasks %}
             <li>
