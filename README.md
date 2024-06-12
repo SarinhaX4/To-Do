@@ -5,9 +5,9 @@ Este é um projeto simples de lista de tarefas (To-Do List) desenvolvido com Fla
 # Funcionalidades
 Adicionar Tarefas: Permite ao usuário adicionar novas tarefas à lista.
 Excluir Tarefas: Permite ao usuário excluir tarefas da lista de pendentes.
-Marcar como Concluída: Permite ao usuário marcar tarefas como concluídas, movendo-as para uma seção separada.
 Mensagens de Erro: Exibe uma mensagem de erro caso o usuário tente adicionar uma tarefa vazia.
-Tecnologias Utilizadas
+
+# Tecnologias Utilizadas
 Python: Linguagem de programação utilizada.
 Flask: Microframework utilizado para desenvolver a aplicação web.
 HTML/CSS: Para estruturar e estilizar as páginas web.
